@@ -15,3 +15,12 @@ console.log(userChoiceAge);
 const price = 0.21;
 const triPrice = userChoiceKm * price;
 console.log(triPrice);
+
+const discountMinor = 20;
+const discountSenior = 40;
+
+
+// Example 1
+
+let discountAmountMinor = (triPrice * discountMinor) / 100;
+console.log(alert(`Sei minorenne! il tuo biglietto costa: ${discountAmountMinor}`));
