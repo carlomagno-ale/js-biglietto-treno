@@ -19,7 +19,7 @@ console.log(triPrice);
 const discountMinor = 20;
 const discountSenior = 40;
 
-if (userChoiceAge <= 18) {
+if (userChoiceAge <= 17) {
     const discountAmountMinor = (triPrice * discountMinor) / 100;
     const totalPrice = (triPrice - discountAmountMinor);
     console.log(alert(`Sei minorenne! il tuo biglietto costa: ${totalPrice.toFixed(2)}€, hai risparmiato ${discountAmountMinor.toFixed(2)}€`));
