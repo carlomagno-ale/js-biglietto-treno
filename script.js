@@ -28,4 +28,6 @@ if (userChoiceAge <= 18) {
     const discountAmountSenior = (triPrice * discountSenior) / 100;
     const totalPrice = (triPrice - discountAmountSenior);
     console.log(alert(`Sei in una fascia tutelata! il tuo biglietto costa: ${totalPrice.toFixed(2)}€ hai risparmiato ${discountAmountSenior.toFixed(2)}€`));
-};
+} else {
+    console.log(alert(`Il tuo biglietto costa: ${triPrice.toFixed(2)}€`));
+}
