@@ -6,3 +6,8 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
 L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
+const userChoiceKm = Number(prompt("Scegli quanti Km devi percorrere per raggiungere la tua destinazione [es.1,2,3...]"));
+console.log(userChoiceKm);
+
+const userChoiceAge = Number(prompt("Inserisci la tua età [es.15,28,40, 55..."));
+console.log(userChoiceAge);
