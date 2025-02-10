@@ -11,3 +11,7 @@ console.log(userChoiceKm);
 
 const userChoiceAge = Number(prompt("Inserisci la tua età [es.15,28,40, 55..."));
 console.log(userChoiceAge);
+
+const price = 0.21;
+const triPrice = userChoiceKm * price;
+console.log(triPrice);
