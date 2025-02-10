@@ -9,7 +9,7 @@ const userNumber = Number(prompt("inserisci numero da 1 a 9, esempio [1,2,3...9]
 console.log(userNumber)
 
 const pcNumber = Math.floor(Math.random() * 9) + 1;
-console.log(pcNumber);
+console.log(alert(`il pc dice ${pcNumber}`));
 
 const total = userNumber + pcNumber;
 console.log(total);
@@ -25,8 +25,9 @@ if (total % 2 === 0) {
 }
 
 if (result == userChoice) {
-    console.log("hai vinto")
+    console.log(alert(`il risultato è ${total}, hai vinto!`));
+
 
 } else {
-    console.log("hai perso")
+    console.log(alert(`il risultato è ${total}, hai perso!`));
 }
