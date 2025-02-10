@@ -19,8 +19,13 @@ console.log(triPrice);
 const discountMinor = 20;
 const discountSenior = 40;
 
+if (userChoiceAge <= 18) {
+    const discountAmountMinor = (triPrice * discountMinor) / 100;
+    const totalPrice = (triPrice - discountAmountMinor);
+    console.log(alert(`Sei minorenne! il tuo biglietto costa: ${totalPrice}€, hai risparmiato ${discountAmountMinor}€`));
 
-// Example 1
-
-let discountAmountMinor = (triPrice * discountMinor) / 100;
-console.log(alert(`Sei minorenne! il tuo biglietto costa: ${discountAmountMinor}`));
+} else if (userChoiceAge >= 65) {
+    const discountAmountSenior = (triPrice * discountSenior) / 100;
+    const totalPrice = (triPrice - discountAmountSenior);
+    console.log(alert(`Sei in una fascia tutelata! il tuo biglietto costa: ${discountAmountSenior}€ hai risparmiato ${discountAmountSenior}€`));
+};
